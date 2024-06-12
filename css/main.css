@@ -1,0 +1,103 @@
+body {
+    color: #5C2410;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Black.ttf');
+}
+
+/* NAVBAR STYLES */
+#logo-img{
+    margin-top: 5px;
+}
+
+#nav1{
+    width: 100%;
+    height: auto;
+    background-color: beige;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#nav1.scrolled{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* .sticky-top.scrolled{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    opacity: 0.98;
+} */
+
+#vertical-line{
+    margin: 0px 30px 0px 4px;
+}
+
+.nav-menu, .nav-header{
+    margin: 0px 40px 0px 40px;
+}
+
+.nav-menu ul {
+    font-size: 16px;
+}
+
+.nav-menu ul li{
+    margin: 0 15px;
+}
+
+/* Hovering over the navbar items */
+.nav-link:hover{
+    color:#F21189 !important;
+    font-weight: 400;
+}
+
+/* When hovered over, the following css styles will take effect on the nav menu items */
+.nav-item.active a{
+    color: #F21189;
+    font-weight: 500;
+}
+
+.nav-item.active div {
+    margin-left: 9px;
+    width: 40%;
+    border: #F21189 solid;
+    border-radius: 5px;
+}
+
+
+.alada-button {
+    background-color: #1164F2;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    position: relative;
+    margin: 0 auto;
+}
+
+.alada-button img {
+    position: absolute;
+    left: 8%;
+    top: 23%;
+    width: 22px;
+}
+
+.alada-button span{
+    text-align: end;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+/* HEADER SECTION STYLES */
+#header{
+    width: 100%;
+    background-color: beige;
+    height: 1200px;
+}
