@@ -3,10 +3,6 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Black.ttf');
-}
 
 /* NAVBAR STYLES */
 #logo-img{
@@ -18,6 +14,8 @@ body {
     height: auto;
     background-color: beige;
     transition: background-color 0.1s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 #nav1.scrolled{
@@ -26,13 +24,6 @@ body {
     background-color: white;
     transition: background-color 0.5s ease-in-out;
 }
-
-/* .sticky-top.scrolled{
-    width: 100%;
-    height: auto;
-    background-color: white;
-    opacity: 0.98;
-} */
 
 #vertical-line{
     margin: 0px 30px 0px 4px;
@@ -48,6 +39,7 @@ body {
 
 .nav-menu ul li{
     margin: 0 15px;
+    font-size: 16px;
 }
 
 /* Hovering over the navbar items */
@@ -100,4 +92,90 @@ body {
     width: 100%;
     background-color: beige;
     height: 1200px;
+    padding: 20px 40px;
+}
+
+/* FOOTER SECTION STYLES */
+.socials-section{
+    background-color: #B4E3FF;
+}
+
+.socials-left{
+    background-image: url('/images/alada_instagram.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-middle{
+    background-image: url('/images/alada_pinterest.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-right{
+    background-image: url('/images/alada_x.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-middle, .socials-left, .socials-right {
+    width: 160px;
+    height: 25px;
+    text-decoration: none;
+}
+
+/* Footer social media icons on hover */
+.socials-left:hover{
+    background-image: url('/images/alada_instagram_pink.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-middle:hover{
+    background-image: url('/images/alada_pinterest_pink.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socials-right:hover{
+    background-image: url('/images/alada_x_pink.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Middle section of footer */
+.footer-middle{
+    background-color: #041634;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#information-column a, #helpful-links-column a{
+    text-decoration: none;
+}
+
+#information-column p:hover, #helpful-links-column p:hover{
+    text-decoration: none;
+    color:#F21189;
+}
+
+
+#submit-button:hover{
+    background-color: #F21189;
+}
+
+#separator{
+    background-color:#F21189;
+    width: 1200px;
+    height: 100px;
+}
+
+#instagram-end{
+    background-image: url(/images/instagram-socials-end.svg);
+    background-size: contain;
+}
+
+.division{
+    margin: 0px 10px;
 }
