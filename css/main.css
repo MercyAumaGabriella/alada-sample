@@ -7,6 +7,7 @@ body {
 /* NAVBAR STYLES */
 #logo-img{
     margin-top: 5px;
+    margin-left: 40px;
 }
 
 #nav1{
@@ -25,8 +26,38 @@ body {
     transition: background-color 0.5s ease-in-out;
 }
 
+#nav-toggle{
+    border-color: #5C2410;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-img-1, #toggle-img:hover .nav-img-2{
+    width: 20px;
+    height: 20px;
+    margin-left: -8px;
+    margin-top: -2px;
+    display: block;
+}
+
+.nav-img-2, #toggle-img:hover .nav-img-1{
+    width: 20px;
+    height: 20px;
+    margin-left: -8px;
+    margin-top: -2px;
+    display: none;
+}
+
+#nav-toggle:hover{
+    border-color: #F21189;
+}
+
+#nav-toggle.active{
+    border: none;
+}
+
 #vertical-line{
-    margin: 0px 30px 0px 4px;
+    margin: 5px 30px 0px 14px;
 }
 
 .nav-menu, .nav-header{
@@ -119,7 +150,6 @@ body {
 }
 
 .socials-middle, .socials-left, .socials-right {
-    width: 160px;
     height: 25px;
     text-decoration: none;
 }
@@ -179,3 +209,50 @@ body {
 .division{
     margin: 0px 10px;
 }
+
+/* Changing the styles of certain elements when the screen is small or less */
+@media only screen and (max-width: 600px) {
+    .socials-left, .socials-middle, .socials-right{
+        height: 20px;
+    }
+
+    #information-column, #helpful-links-column {
+        font-size: 12px;
+    }
+
+    #about-us h7, #information-column h6, #helpful-links-column h6, #subscribe-form h6 {
+        font-size: 14px;
+    }
+
+    #about-us p{
+        font-size: 12px;
+    }
+
+    .about-us-details span{
+        font-size: 12px;
+    }
+
+    .about-us-details img{
+        width: 15px;
+        height: 15px;
+    }
+
+    #subscribe-form input, #subscribe-form button{
+        font-size: 12px;
+    }
+
+    #subscribe-form img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .division img{
+        width: 25px;
+        height: 25px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
+}
+
